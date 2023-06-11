@@ -1,5 +1,7 @@
+import style from './Botton.module.scss';
+
 function Button() {
-  return <button>Click aqui</button>;
+  return <button className={style.button}>Click aqui</button>;
 }
 
 export default Button;
