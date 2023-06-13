@@ -26,7 +26,7 @@ function Form() {
           required
         />
       </div>
-      <Button />
+      <Button>Começar</Button>
     </form>
   );
 }

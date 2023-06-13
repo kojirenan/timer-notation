@@ -1,6 +1,6 @@
 import { v4 as uuidv4 } from 'uuid';
 
-const tasks = [
+const tasksDefault = [
   {
     id: uuidv4(),
     name: 'Codar',
@@ -18,4 +18,4 @@ const tasks = [
   },
 ];
 
-export default tasks;
+export default tasksDefault;

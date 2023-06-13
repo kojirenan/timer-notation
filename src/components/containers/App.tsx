@@ -1,13 +1,14 @@
 import Form from '../Form';
 import List from '../List';
+import Stopwatch from '../Stopwatch';
 import style from './App.module.scss';
 
 function App() {
   return (
     <div className={style.AppStyle}>
-      Hello World!
       <Form />
       <List />
+      <Stopwatch />
     </div>
   );
 }
