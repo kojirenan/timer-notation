@@ -13,7 +13,7 @@
   box-sizing: border-box;
   border-radius: 10px;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1000px) {
     grid-template-areas:
       'new-task tasks'
       'stopwatch tasks';

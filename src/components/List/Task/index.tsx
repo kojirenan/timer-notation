@@ -1,6 +1,9 @@
+import { ITasks } from '../../types/ITasks';
 import style from '../List.module.scss';
 
-function Task({ name, time }: { name: string; time: string }) {
+function Task({ name, time, select, complete, id }: ITasks) {
+  console.log({ name, time, select, complete, id });
+
   return (
     <li className={style.task}>
       <h3>
