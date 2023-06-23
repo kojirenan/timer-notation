@@ -8,8 +8,11 @@ interface PropsTask extends ITasks {
 function Task({ name, time, select, complete, id, selectTask }: PropsTask) {
   return (
     <li
-      className={`${style.task} ${select ? style.seletedItem : ''}`}
+      className={`${style.task} ${select ? style.seletedItem : ''} ${
+        complete ? style.completedItem : ''
+      }`}
       onClick={() =>
+        !complete &&
         selectTask({
           name,
           time,
@@ -19,9 +22,11 @@ function Task({ name, time, select, complete, id, selectTask }: PropsTask) {
         })
       }
     >
-      <h3>
-        {name} <span>{time}</span>
-      </h3>
+      <h3>{name}</h3>
+      <span>{time}</span>
+      {complete && (
+        <span className={style.completed} aria-label="task completed"></span>
+      )}
     </li>
   );
 }
