@@ -1,6 +1,6 @@
 # Timer Notation
 
-Visualize a aplicação [clicando aqui]
+Visualize a aplicação [clicando aqui](https://timer-notation-pnr5efk2s-kojirenan.vercel.app/)
 
 Aplicação para criar tarefas e determinar o tempo que ficará focada nela.
 
