@@ -1,0 +1,21 @@
+.tasksList {
+  margin-top: 10rem;
+  grid-area: tasks;
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 12px;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 2rem;
+
+    li {
+      min-width: 22rem;
+      width: 40%;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  transition: 300ms;
+  font-family: 'Nunito';
+}
+
+.AppStyle {
+  margin: auto;
+  display: grid;
+  grid-template-areas:
+    'header'
+    'new-task'
+    'stopwatch'
+    'tasks';
+  row-gap: 24px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 2rem 5rem;
+
+  @media screen and (min-width: 768px) {
+    max-width: 132rem;
+    grid-template-areas:
+      'header header'
+      'new-task stopwatch'
+      'tasks tasks';
+    column-gap: 64px;
+    grid-template-columns: 1fr 2fr;
+  }
+}

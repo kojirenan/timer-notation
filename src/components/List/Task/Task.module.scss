@@ -1,0 +1,51 @@
+.task {
+  background-color: #242933;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 8px;
+  position: relative;
+  cursor: pointer;
+
+  h3 {
+    font-size: 1.6rem;
+    margin-bottom: 0.8rem;
+    word-break: break-all;
+  }
+
+  span {
+    color: #d0d0d0;
+    font-size: 1.6rem;
+  }
+
+  @media screen and (min-width: 1000px) {
+    font-size: 1.8rem;
+  }
+}
+
+.seletedItem {
+  color: white;
+  font-weight: 900;
+  background: linear-gradient(
+    90deg,
+    rgba(50, 50, 167, 1) 0%,
+    rgba(0, 183, 220, 1) 100%
+  );
+
+  span {
+    color: white;
+  }
+}
+
+.completedItem {
+  color: white;
+  font-weight: 900;
+  background: linear-gradient(
+    90deg,
+    rgb(42, 143, 53) 0%,
+    rgb(132, 175, 3) 100%
+  );
+
+  span {
+    color: white;
+  }
+}
